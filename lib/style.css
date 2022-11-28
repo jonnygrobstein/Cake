@@ -1,8 +1,8 @@
-/*
-* {
+
+/* * {
     border: 1px solid red !important
   }
-  */
+*/
   
   body {
     font-family: 'Montserrat', sans-serif;
@@ -202,44 +202,197 @@
    line-height: 60px;
   }
 
-  .fathers-day-special {
+  img {
+   height: auto;
+   max-width: 100%;
+   vertical-align: middle;
+  }
+
+  /* Item Containers Start Here */
+
+  .content-cards-centered {
+   font-family: 'Montserrat', sans-serif;
+
+  }
+
+.highlight-row-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
     padding: 40px;
     background-color: #feffea;
     color: #76d9d2;
-    justify-content: center;
+    justify-content:space-between;
     max-width: 1000px;
     width: 85vw;
-    margin: auto;
     font-weight: 400;
-  }
+}
 
-  .popular {
+.popular-row-container {
+   display: flex;
+   flex-wrap: wrap;
+   margin: auto;
+   padding: 40px;
+   color: #76d9d2;
+   justify-content:space-between;
+   max-width: 1000px;
+   width: 85vw;
+   font-weight: 400;
+}
+
+.recent-row-container {
+   display: flex;
+   flex-wrap: wrap;
+   margin: auto;
+   padding: 40px;
+   color: #76d9d2;
+   justify-content:space-between;
+   max-width: 1000px;
+   width: 85vw;
+   font-weight: 400;
+}
+
+.bakers-row-container {
+   display: flex;
+   flex-wrap: wrap;
+   margin: auto;
+   padding: 40px;
+   background-color: #b9ebe8;
+   color: #76d9d2;
+   justify-content:space-between;
+   max-width: 1000px;
+   width: 85vw;
+   font-weight: 400;
+}
+
+.bytes-row-container {
+   display: flex;
+   flex-wrap: wrap;
+   margin: auto;
+   padding: 40px;
+   background-color: #fdffd5;
+   color: #76d9d2;
+   justify-content:space-between;
+   max-width: 1000px;
+   width: 85vw;
+   font-weight: 400;
+}
+
+.card-section-title {
+   width: 100%; 
+   padding-left: 10px;
+   font-weight: 800;
+   color: #76d9d2;
+   font-size: 20px;
+}
+
+.popular-section-title {
+   width: 100%; 
+   padding-left: 10px;
+   font-weight: 800;
+   font-size: 20px;
+   color: #f397b0;
+}
+
+.bakers-section-title {
+   width: 100%; 
+   padding-left: 10px;
+   color: #966fbf;
+   font-weight: 900;
+   font-size: 20px;
+}
+
+.recent-section-title {
+   width: 100%; 
+   padding-left: 10px;
+   font-weight: 800;
+   font-size: 20px;
+   color: #f397b0;
+}
+
+.bytes-section-title {
+   width: 100%; 
+   padding-left: 10px;
+   font-weight: 800;
+   font-size: 20px;
+   color: #f397b0;
+}
+
+.flex-card-container {
+   display: flex;
+   justify-content:;
+   width: 150px;
+   height: auto;
+   overflow: hidden;
+   position: relative;
+   border-radius: 5px; 
+   flex-direction: column;  
+   margin: 20px 10px; 
+}
+
+.card-image {
+   border-radius: 5px;
+   background-color: #98999b;
+   height: 150px;
+   width: 150px;
+}
+
+.card-image img {
+   height: 150px;
+   width: 150px;
+   width: auto;
+   object-fit: cover;
+}
+
+.star-rating-1 {
+   box-sizing: content-box;
+   width: 150px;
+   text-align: center;
+ }
+
+ .name-item-1-highlight {
+   width: 150px;
+   text-align: center;
+   color: black;
+}
+
+.price-item-1-highlight {
+   width: 150px;
+   font-weight: 700;
+   font-size: 14px;
+   text-align: center;
+   color: black;
+}
+
+.price-item-1 {
+   box-sizing: content-box;
+   text-align: center;
+   width: 150px;
+   font-weight: 700;
+   font-size: 14px;
+}
+
+
+/* Work ------------------ in ------------------- Progress */
+
+.popular {
     padding: 40px;
     color: #f397b0;
     max-width: 1000px;
     width: 85vw;
     margin: auto;
     font-weight: 900;
-  }
+}
 
-  /* Can't get this to go across the screen - Solution is same for Bytes
-
-  .baker-row {
-   width: 100%;
+.top-baker {
+   padding: 40px;
+   color: #966fbf;
+   max-width: 1000px;
+   width: 85vw;
+   margin: auto;
+   font-weight: 900;
    background-color: #b9ebe8;
-  }
-
-*/
-
-  .top-baker {
-    padding: 40px;
-    color: #966fbf;
-    max-width: 1000px;
-    width: 85vw;
-    margin: auto;
-    font-weight: 900;
-    background-color: #b9ebe8;
-  }
+}
 
   .recent {
     padding: 40px;
@@ -418,19 +571,7 @@
 
 
 
- .grid-item-1 {
-    box-sizing: content-box;
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 1;
-    grid-row-end: 1;
-    max-width: 150px;
-    max-height: 150px;
-    overflow: hidden;
-    background-color: #98999b;
-    border-radius: 10px;
-    position: relative;    
- }
+
 
  .grid-item-2 {
     box-sizing: content-box;
@@ -559,14 +700,7 @@
     overflow: hidden;
  }
 
- .star-rating-1 {
-   box-sizing: content-box;
-   grid-column-start: 1;
-   grid-column-end: 1;
-   grid-row-start: 2;
-   grid-row-end: 2;
-   width: 150px;
- }
+
 
 .star-rating-2 {
    box-sizing: content-box;
@@ -754,17 +888,7 @@
    width: 150px;
 }
 
-.price-item-1a {
-   box-sizing: content-box;
-   text-align: center;
-   grid-column-start: 1;
-   grid-column-end: 1;
-   grid-row-start: 4;
-   grid-row-end: 4;
-   width: 150px;
-   font-weight: 700;
-   font-size: 14px;
-}
+
 
 .price-item-2a {
    box-sizing: content-box;
