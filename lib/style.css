@@ -1,7 +1,7 @@
 
-* {
+/* * {
     border: 1px solid red !important
-  }
+  } */
 
   
   body {
@@ -414,6 +414,7 @@
     justify-content: center;
     width: auto;
     margin: auto;
+    
   }
 
   .footer-main {
@@ -432,7 +433,6 @@
 
   .footer-left {
     flex: wrap;
-    padding: 1.25rem;
     min-width: 10rem;
   }
 
